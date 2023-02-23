@@ -9,8 +9,8 @@ metadata:
 spec:
   project: default
   source:
-    chart: camelk
     repoURL: https://apache.github.io/camel-k/charts/
+    path: argocd/apps
   destination:
     name: in-cluster
     namespace: camelk
