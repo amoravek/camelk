@@ -19,8 +19,6 @@ spec:
             registry:
               address: 10.107.206.67
               insecure: true
-              profile: kubernetes
-              cluster: kubernetes
   destination:
     name: in-cluster
     namespace: camelk
