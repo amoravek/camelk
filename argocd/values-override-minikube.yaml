@@ -3,9 +3,13 @@ configs:
     argocdServerAdminPassword: '$2a$10$9BU9yDBq.ULIAEW9uJB86.da4lGI7cehqjBziOYcOUolQRUGJFYcW'
 
   repositories:
-    camel-k:
-      name: camel-k
+    camel-k-git:
+      name: camel-k-git
       type: git
+      url: https://github.com/amoravek/camelk.git
+    camel-k:
+      name: camel-k-helm
+      type: helm
       url: https://apache.github.io/camel-k/charts/
 
 server:
