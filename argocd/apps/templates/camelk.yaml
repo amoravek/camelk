@@ -12,6 +12,13 @@ spec:
     chart: camel-k
     repoURL: https://apache.github.io/camel-k/charts/
     targetRevision: 0.12.1
+    helm:
+      values: |
+        platform:
+          build:
+            registry:
+              address: 10.107.206.67
+              insecure: 'true'
   destination:
     name: in-cluster
     namespace: camelk
