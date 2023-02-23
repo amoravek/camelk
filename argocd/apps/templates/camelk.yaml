@@ -11,7 +11,7 @@ spec:
   source:
     chart: camel-k
     repoURL: https://apache.github.io/camel-k/charts/
-    targetVersion: 0.12.1
+    targetRevision: 0.12.1
   destination:
     name: in-cluster
     namespace: camelk
