@@ -8,8 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://apache.github.io/camel-k/charts/
-    path:
+    repoURL: https://github.com/amoravek/camelk.git
+    path: argocd/apps
   destination:
     name: in-cluster
     namespace: camelk
