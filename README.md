@@ -1,1 +1,1 @@
-# camelk
+# camel k demo
