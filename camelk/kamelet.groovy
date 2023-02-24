@@ -1,3 +1,2 @@
-from('timer:tick?period=5000')
-  .setBody().constant('Hello world from Camel K')
-  .to('log:info')
+from('kamelet:http-source?url=https://raw.githubusercontent.com/amoravek/camelk/main/demo.json&period=5000')
+.to('log:info')
