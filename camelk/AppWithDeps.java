@@ -1,8 +1,13 @@
 import org.apache.camel.builder.RouteBuilder;
+import cz.trask.camel.processor.UpperCaseProcessor;
 
 public class AppWithDeps extends RouteBuilder {
   @Override
   public void configure() throws Exception {
-    from("timer:tick?period=3000").setBody().constant("Hello world from Camel K").to("log:info");
+    from("timer:tick")
+    .setBody().simple("abc")
+    .process(new UpperCaseProcessor())
+    .to("log:info");
   }
 }
+

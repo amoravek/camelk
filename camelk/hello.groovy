@@ -1,3 +1,5 @@
-from('timer:tick?period=3000')
-  .setBody().constant('Hello world from Camel K')
-  .to('log:info')
+from('timer:tick?period=1000')
+  .setBody().simple("abcd")
+  .process(new cz.trask.camel.processor.UpperCaseProcessor())
+    // .bean(RandomStringsBean.class, "getRandomString(10)")
+.to('log:info')
